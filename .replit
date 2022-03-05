@@ -1,0 +1,4 @@
+run = "cd app && npm run dev -- --host"
+
+[nix]
+channel = "stable-21_11"
