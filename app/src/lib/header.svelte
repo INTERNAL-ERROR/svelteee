@@ -1,1 +1,9 @@
-<h1>Hello, there!</h1>
+<script>
+    let name = ""
+</script>
+
+<input bind:value={name} />
+
+<nav>
+    <a sveltekit:prefetch href = {"about/" + name}>Home</a>
+</nav>
