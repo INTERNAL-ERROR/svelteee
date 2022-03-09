@@ -4,8 +4,12 @@ export async function get(req) {
         "xD",
         ":)",
         ":(",
+        "lol",
+        "wow",
+        "hahaha",
+        "jk"
     ]
-    let c = emojis[Math.random * (emojis.length-1)]
+   let c = emojis[Math.floor(Math.random() * 7)]
 
-  return { body: { emoji:  "a"} }
+  return { body: { emoji:  c} }
 }
