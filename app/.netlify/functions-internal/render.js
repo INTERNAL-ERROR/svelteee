@@ -5,7 +5,7 @@ exports.handler = init({
 	assets: new Set(["favicon.png"]),
 	_: {
 		mime: {".png":"image/png"},
-		entry: {"file":"start-ed2a28aa.js","js":["start-ed2a28aa.js","chunks/vendor-e133cae4.js"],"css":[]},
+		entry: {"file":"start-a3df2a49.js","js":["start-a3df2a49.js","chunks/vendor-e133cae4.js"],"css":[]},
 		nodes: [
 			() => Promise.resolve().then(() => require('../server/nodes/0.js')),
 			() => Promise.resolve().then(() => require('../server/nodes/1.js')),
