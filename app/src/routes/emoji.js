@@ -9,7 +9,7 @@ export async function get(req) {
         "hahaha",
         "jk"
     ]
-   let c = emojis[Math.floor(Math.random() * 7)]
+   let c = emojis[Math.floor(Math.random() * 7)] + import.meta.env.VITE_SUPERSECRET
 
   return { body: { emoji:  c} }
 }
