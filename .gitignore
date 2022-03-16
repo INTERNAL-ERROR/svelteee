@@ -1,0 +1,9 @@
+app/.DS_Store
+app/node_modules
+app/build
+app/.svelte-kit
+app/.netlify
+app/package
+app/.env
+app/.env.*
+app/!.env.example
