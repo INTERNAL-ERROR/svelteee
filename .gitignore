@@ -1,11 +1,20 @@
-/app/
-app/.DS_Store
-app/node_modules
-app/build
-app/.svelte-kit
-app/.netlify
-app/package
-app/.env
-app/.env.*
-app/!.env.example
-.nix
+  
+# SvelteKit Files
+build/
+functions/
+/.svelte-kit
+
+# Dependency directories
+node_modules/
+/package
+
+
+
+# dotenv environment variable files
+.env*
+!.env.EXAMPLE
+
+
+
+# Local Netlify folder
+.netlify
