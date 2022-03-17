@@ -34,7 +34,7 @@ async function get(req) {
     "hahaha",
     "jk"
   ];
-  let c = emojis[Math.floor(Math.random() * 7)] + "Bob";
+  let c = emojis[Math.floor(Math.random() * 7)] + {}.ASTRA_DB_ID;
   return { body: { emoji: c } };
 }
 module.exports = __toCommonJS(stdin_exports);

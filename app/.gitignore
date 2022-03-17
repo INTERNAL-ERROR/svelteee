@@ -1,20 +1,3 @@
-  
-# SvelteKit Files
-build/
-functions/
-/.svelte-kit
-
-# Dependency directories
-node_modules/
-/package
-
-
-
-# dotenv environment variable files
-.env*
-!.env.EXAMPLE
-
-
-
-# Local Netlify folder
-/.netlify
+.netlify/
+.svelte-kit/
+*.env

@@ -7,6 +7,8 @@ pkgs.mkShell {
   # and a list of packages
   buildInputs = [
     pkgs.nodejs
+    pkgs.python
+    
   ];
 
   # bash to run when you enter the shell

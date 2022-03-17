@@ -13,5 +13,9 @@
     "@sveltejs/kit": "next",
     "svelte": "^3.44.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@astrajs/collections": "^0.3.3",
+    "npm": "^8.5.4"
+  }
 }
