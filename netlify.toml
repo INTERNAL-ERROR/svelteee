@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[context.production]
+  environment = { ACCESS_TOKEN = "super secret", VITE_ASTRA_DB_ID="b9537f9e-e991-4682-a334-c76c91ecdd0a", VITE_ASTRA_DB_REGION="us-east1", VITE_ASTRA_DB_KEYSPACE="db", VITE_ASTRA_DB_APPLICATION_TOKEN="AstraCS:ByrqxjotnKSrYWXQYmGshZWr:1062411510574f971714b53a9267b54773599725bad3e530ae80f893578a027d"}
