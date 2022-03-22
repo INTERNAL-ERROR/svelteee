@@ -6,7 +6,7 @@ export async function post ({request}) {
     console.log("asdf")
     console.log(body.hello);
     
-    return {status: 200, body: {
+    return {status: 418, body: {
         wow: "hi!"
     }}
 }
