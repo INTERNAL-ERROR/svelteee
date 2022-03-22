@@ -10,7 +10,7 @@
     }
 </script>
 <script>
-    export const status, error
+    export let status, error
 </script>
 
 <h1>{status}</h1>
