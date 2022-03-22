@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-netlify": "^1.0.0-next.49",
+    "@sveltejs/kit": "next",
+    "svelte": "^3.44.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "@astrajs/collections": "^0.3.3",
+    "jsonwebtoken": "^8.5.1",
+    "npm": "^8.5.4"
+  }
+}
