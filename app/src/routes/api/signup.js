@@ -15,7 +15,10 @@ export async function post ({request}) {
           var myobj = {hello:"world"}
             
             dbo.collection("customers").insertOne(myobj, function(err, res) {
-                if (err) throw err;
+                if (err) {
+                    return {status: 400}
+                    throw err;
+                }
                 console.log("1 document inserted");
                 
               });
