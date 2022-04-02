@@ -7,29 +7,25 @@ export async function post ({request}) {
     let body = await request.json();
     console.log("asdf")
     console.log(body.hello);
-   
-        const uri = "mongodb+srv://ethano:SenorGatoSpeakseo941248169@survey.4offd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-        MongoClient.connect(uri, function(err, db) {
-          if (err) throw err;
-          var dbo = db.db("mydb");
-          var myobj = {hello:"world"}
-            
-            dbo.collection("customers").insertOne(myobj, function(err, res) {
-                if (err) {
-                    return {status: 400}
-                    throw err;
-                }
-                console.log("1 document inserted");
-                
-              });
-            dbo.collection("customers").find({}).toArray(function(err, result) {
-    if (err) throw err;
-    console.log(result);
-    db.close();
-  });
-        });
+    const uri = "mongodb+srv://ethano:SenorGatoSpeakseo941248169@survey.4offd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+    const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
     
-    return {status: 418, body: {
-        wow: "hi!"
+    async function run (){
+        await  client.connect().then(() => {console.log("conencted")}).catch(err => {console.log(err)})
+        const database = client.db("mydb");
+        const collection = database.collection("customers");
+        const results = await collection.find({})
+        this.data = await results.map(el => {
+            return {hello: el.hello, id: el._id}
+        })
+        return this.data.toArray()
+    }
+
+    
+    
+    
+
+    return {status: 200, body: {
+        wow: await run()
     }}
 }

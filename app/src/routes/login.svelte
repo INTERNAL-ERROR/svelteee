@@ -25,5 +25,5 @@
     export let wow
 </script>
 
-<h1>hi {wow}</h1>
+<h1>hi {wow[0].hello}</h1>
 
