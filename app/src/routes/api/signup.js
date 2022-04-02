@@ -15,7 +15,9 @@ export async function post ({request}) {
         const database = client.db("mydb");
         const collection = database.collection("customers");
         const results = await collection.find({})
+        await collection.insertOne({hello: "Netlify!"})
         this.data = await results.map(el => {
+            console.log(el)
             return {hello: el.hello, id: el._id}
         })
         return this.data.toArray()
