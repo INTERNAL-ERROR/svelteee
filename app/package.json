@@ -15,7 +15,6 @@
   },
   "type": "module",
   "dependencies": {
-    "@astrajs/collections": "^0.3.3",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.4.1",
     "npm": "^8.5.4"
